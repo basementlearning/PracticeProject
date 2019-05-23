@@ -18,7 +18,7 @@ namespace PracticeProjectApi.Models
 	//				#else
 	//								var rdsEndpoint = System.Environment.GetEnvironmentVariable("RDSEndpoint");
 	//								var environment = System.Environment.GetEnvironmentVariable("Environment");
-	//								options.UseSqlServer($"Data Source={rdsEndpoint};initial catalog={environment}VodLibrary;persist security info=True;user id=ibossuser;password=1b0$$us3R;MultipleActiveResultSets=True;App=EntityFramework;");
+	//								options.UseSqlServer($"Data Source={rdsEndpoint};initial catalog={environment}VodLibrary;persist security info=True;user id=userName;password=passowordHere;MultipleActiveResultSets=True;App=EntityFramework;");
 	//				#endif
 	//				});
 	//==========================================================
