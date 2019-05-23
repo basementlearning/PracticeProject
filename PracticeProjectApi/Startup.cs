@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PracticeProjectApi.Models;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace PracticeProjectApi
 {
@@ -27,11 +28,43 @@ namespace PracticeProjectApi
 			{
 				optn.UseInMemoryDatabase("PracticeList");
 			});
+
+
+			//====================================================================
+			//====================================================================
+			//REGISTER THE SWAGGERGENERATOR, DEFINING 1 OR MORE SWAGGER DOCUMENTS
+			//====================================================================
+			//====================================================================
+			services.AddSwaggerGen(config =>
+			{
+				config.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+			});
+
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
+
+			//===================================================
+			//===================================================
+			//CONFIGURE PROJECT TO USE SWAGGER
+			//CONFIGURE SWAGGERUI TO CREATE THE SWAGGER ENDPOINT
+			//===================================================
+			//===================================================
+			app.UseSwagger();
+			app.UseSwaggerUI(config =>
+			{
+				config.SwaggerEndpoint("/swagger/v1/swagger.json", "MY API V1");
+			});
+
+
+
+
+
+
+
+
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
