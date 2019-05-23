@@ -24,11 +24,6 @@ namespace PracticeProjectApi.Controllers
 
 
 
-
-
-
-
-
 		// GET: api/<controller>
 		[HttpGet]
 		public IEnumerable<string> Get()
