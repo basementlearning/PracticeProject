@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeProjectApi", "PracticeProjectApi\PracticeProjectApi.csproj", "{60E7AD5E-C4F2-4B38-ABE1-4124C9468560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeProjectApi", "PracticeProjectApi\PracticeProjectApi.csproj", "{60E7AD5E-C4F2-4B38-ABE1-4124C9468560}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeProjectBusiness", "PracticeProjectBusiness\PracticeProjectBusiness.csproj", "{C8AAD3F1-6402-4D53-9AD9-076A584B40D5}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "PracticeProjectWeb", "PracticeProjectWeb\PracticeProjectWeb.njsproj", "{C8A51F88-59E8-4912-8E7C-CFEE6C2CEC04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{60E7AD5E-C4F2-4B38-ABE1-4124C9468560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60E7AD5E-C4F2-4B38-ABE1-4124C9468560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60E7AD5E-C4F2-4B38-ABE1-4124C9468560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8AAD3F1-6402-4D53-9AD9-076A584B40D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8AAD3F1-6402-4D53-9AD9-076A584B40D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8AAD3F1-6402-4D53-9AD9-076A584B40D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8AAD3F1-6402-4D53-9AD9-076A584B40D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A51F88-59E8-4912-8E7C-CFEE6C2CEC04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A51F88-59E8-4912-8E7C-CFEE6C2CEC04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A51F88-59E8-4912-8E7C-CFEE6C2CEC04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A51F88-59E8-4912-8E7C-CFEE6C2CEC04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
