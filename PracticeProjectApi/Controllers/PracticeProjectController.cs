@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace PracticeProjectApi.Controllers
 {
 	[Route("api/[controller]")]
-	public class PracticeProjectController : Controller
+	public class PracticeProjectController : ControllerBase
 	{
 
 
